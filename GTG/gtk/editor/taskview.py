@@ -692,9 +692,6 @@ class TaskView(Gtk.TextView):
 
         return '\n'.join(text)
 
-        # Title isn't part of the task contents
-        return self.serialize()
-
 
     def insert(self, text: str) -> None:
         """Unserialize and insert text in the buffer."""
